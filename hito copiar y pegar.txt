@@ -1,0 +1,152 @@
+# # -----------------------------------------------------------------------------------------------------------------------------------FORMAS
+# while True:
+#     try:
+#         eleccion =int(input("\nSelecciona la forma que deseas obtener, siendo 1-Cuadrado, 2-Rectángulo o 3-Para finalizar el programa: "))
+#         if eleccion == 1:
+#             basecuadrado =int(input("Elige el lado del cuadrado:  "))
+#             for i in range(basecuadrado):
+#                 print(basecuadrado*'*')
+#             areacuadrado= basecuadrado*basecuadrado
+#             print("El Área del cuadrdao es =",areacuadrado)
+#             perimetrocuadrado= basecuadrado*4
+#             print("El Perímetro del cuadrado =",perimetrocuadrado)
+#             continue
+#         if eleccion ==2:
+#             baserectangulo = int(input("Elige la base del rectángulo: "))
+#             alturarectangulo = int(input("Ahora, la altura del rectángulo: "))
+#         if  baserectangulo == alturarectangulo:
+#             print("!No pueden tener la misma base¡ Eso es un cuadrado")
+#             break
+#         elif baserectangulo != alturarectangulo:
+#             for i in range(alturarectangulo):
+#                 print(baserectangulo*'*')
+#             area=baserectangulo * alturarectangulo
+#             print("El Área del rectángulo es =",area )
+#             perimetro = (baserectangulo*2) + (alturarectangulo*2)
+#             print("El Perímetro del rectángulo es =",perimetro)
+#         if eleccion ==3:
+#             print("El programa ha terminado, ¡¡Hasta luego!!")
+#             break
+#     except ValueError:
+#         print("\nOpción invalida, por favor elija una de las 3 disponibles: 1-Cuadrado, 2-Rectángulo o 3-Para finalizar el programa:")
+##----------------------------------------------------------------------------------------------------------------------------------------
+
+##-----------------------------------------------------------------------------------------------------------------------------PIEDRA PAPEL O TIJERA
+# import random
+
+# print("Bienvenido a Piedra, Papel o Tijera, buena suerte")
+# # 1=Piedra
+# # 2=Papel
+# # 3=Tijeras
+# contador_usuario = 0
+# contador_programa = 0
+# while contador_programa!=3 and contador_usuario !=3:
+#     try:
+#         eleccion = int(input("\nEscoge '1' para sacar piedra, '2' para sacar Papel o '3' para sacar Tijera: "))
+#         hola = random.randint(1,3)
+#         if eleccion == 1 and hola == 1:
+#             print("Has seleccionado piedra")
+#             print("El programa ha seleccionado Piedra, Empate")
+#             contador_usuario = contador_usuario + 0
+#             contador_programa = contador_programa + 0
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 1 and hola == 2:
+#             print("Has seleccionado piedra")
+#             print("El programa ha seleccionado Papel, has perdido")
+#             contador_usuario = contador_usuario + 0
+#             contador_programa = contador_programa + 1
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 1 and hola == 3:
+#             print("Has seleccionado piedra")
+#             print("El programa ha seleccionado Tijeras, has Ganado")
+#             contador_usuario = contador_usuario + 1
+#             contador_programa = contador_programa + 0
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 2 and hola == 2:
+#             print("Has seleccionado papel")
+#             print("El programa ha seleccionado Papel, Empate")
+#             contador_usuario = contador_usuario + 0
+#             contador_programa = contador_programa + 0
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 3 and hola == 3:
+#             print("Has seleccionado tijeras")
+#             print("El programa ha seleccionado Tijera, Empate")
+#             contador_usuario = contador_usuario + 0
+#             contador_programa = contador_programa + 0
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 2 and hola == 1:
+#             print("Has elegido papel")
+#             print("El programa ha elegido Piedra, has ganado")
+#             contador_usuario = contador_usuario + 1
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 2 and hola == 3:
+#             print("Has elegido papel")
+#             print("El programa ha elegido tijeras, has perdido")
+#             contador_programa = contador_programa +1
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 3 and hola == 1:
+#             print("Has elegido tijeras")
+#             print("El programa ha elegido Piedra, has perdido")
+#             contador_programa = contador_programa + 1
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion == 3 and hola == 2:
+#             print("Has elegido tijeras")
+#             print("El programa ha elegido Papel, has ganado")
+#             contador_usuario = contador_usuario + 1
+#             print("\nEl programa lleva:",contador_programa, "rondas ganadas")
+#             print("Llevas", contador_usuario, "rondas ganadas")
+#         if eleccion >3 or eleccion <0:
+#             print("Elige un número del 1 al 3")
+#     except ValueError:
+#        print("\nOpción invalida, por favor elija una de las 3 disponibles: 1-Piedra, 2-Papel o 3-Tijeras:")
+# if contador_programa == 3:
+#     print("\nEl programa ha llegado a 3 rondas ganadas")
+#     print("Has perdido contra un robot, que vergüenza")
+# elif contador_usuario == 3:
+#     print("\nHas llegado a 3 rondas ganadas")
+#     print("SIUUU, Has ganado, enhorabuena")
+
+  
+##--------------------------------------------------------------------------------------------------------------------------------------
+
+## -------------------------------------------------------------------------------------------------------------------------------BANCA
+# while True:
+#     saldo_inicial=float(input("Introduce el saldo de tu cuenta para poder tener un registro: "))
+#     if saldo_inicial<0:
+#         print("Introduce un saldo positivo")
+#     elif saldo_inicial>0:
+#         break
+# contador_ingresos = 0
+# contador_retiradas = 0
+# while True:
+#     menu=int(input("\nSelecciona una de las opciones: 1-Ingresar dinero, 2-Retirar dinero, 3-Mostrar saldo disponible,  4-Salir o 5-Para ver los ingresos y las retiradas de dinero efectuadas: "))
+#     if menu ==1:
+#         dinero_ingresar = float(input("Introduce la cantidad a ingresar: "))
+#         saldo_inicial = saldo_inicial + dinero_ingresar
+#         contador_ingresos = contador_ingresos +1
+#     if menu ==2:
+#         if saldo_inicial >0:
+#             dinero_retirar = float(input("Introduce la cantidad a retirar: "))
+#             saldo_inicial = saldo_inicial - dinero_retirar
+#             contador_retiradas = contador_retiradas + 1
+#         if saldo_inicial <= 0:
+#             print("No puedes sacar más dinero")
+#     if menu ==3:
+#         print("El saldo actual de tu cuenta es de", saldo_inicial,"€")
+#     if menu ==4:
+#         print("Hasta luego")
+#         break
+#     if menu ==5 and contador_retiradas>0:
+#         print("Has retirado dinero",contador_retiradas, "veces")
+#     if menu ==5 and contador_ingresos>0:
+#         print("Has ingresado dinero",contador_ingresos, "veces")
+##-----------------------------------------------------------------------------------------------------------------------
+
